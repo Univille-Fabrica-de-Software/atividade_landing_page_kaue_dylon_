@@ -1,3 +1,19 @@
 body {
   background-color: #f8f9fa;
 }
+
+section{
+  margin-bottom: 3rem;
+}
+
+.card{
+  border: 1px, solid #dee2e6;
+}
+
+.badge{
+  padding: 8px, 12px;
+}
+
+footer{
+  color: #95a2ad;
+}
