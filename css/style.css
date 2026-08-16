@@ -1,19 +1,22 @@
-body {
-  background-color: #f8f9fa;
+html{
+    scroll-behavior: smooth;
 }
 
-section{
-  margin-bottom: 3rem;
+body{
+    padding-top: 72px;
 }
 
-.card{
-  border: 1px, solid #dee2e6;
+.section-padding{
+    padding: 72px 0;
 }
 
-.badge{
-  padding: 8px, 12px;
+.logo{
+    width: 140px;
+    height: auto;
 }
 
-footer{
-  color: #95a2ad;
+.hero-section{
+    min-height: 520px;
+    display: flex;
+    align-items: center;
 }

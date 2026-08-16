@@ -1,216 +1,479 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Panorama do Mercado Tech</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <header class="bg-success text-white py-5">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="Conecta Respeito">
+  <meta name="description" content="Landing page educativa sobre conscientização, prevenção e orientação sobre bullying escolar, social e digital.">
+  <meta name="keywords" content="bullying, conscientização, prevenção, cyberbullying, comunidade escolar, educação, apoio, orientação">
+  <meta name="author" content="Kauê Dylon">
+  <meta name="theme-color" content="#1f7a5c">
+  <title>Conecta Respeito</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+    crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="assets/icons/favicon_io/site.webmanifest">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-white border-bottom fixed-top shadow-sm">
       <div class="container">
-        <h1 class="mb-3">Panorama do Mercado em Tecnologia</h1>
-        <p class="mb-1"><strong>Acadêmico:</strong> Kauê Dylon Pereira Bruch</p>
-        <p class="mb-1"><strong>Disciplina:</strong> Fábrica de Software</p>
-        <p class="mb-0">Resumo das vagas locais e nacionais pesquisadas.</p>
-      </div>
-    </header>
+        <div class="d-flex flex-column align-items-center me-3">
+          <a class="navbar-brand d-flex align-items-center mb-0" href="#inicio" aria-label="Página inicial do Conecta Respeito">
+            <img src="assets/images/logo.png" alt="Logo do projeto Conecta Respeito" class="img-fluid logo">
+          </a>
+          <span class="fw-bold text-success text-center">Conecta Respeito</span>
+        </div>
 
-    <section class="mb-5">
-      <div class="d-flex align-items-center mb-3">
-        <h2 class="h4 mb-0">Apresentação da pesquisa</h2>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+          aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu de navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#inicio">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#o-que-e-bullying">Bullying</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tipos-de-bullying">Tipos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sinais-de-alerta">Sinais</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#como-agir">Como agir</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#canais-de-apoio">Apoio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#compromisso">Compromisso</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <p>
-        Foi realizado um levantamento de oito vagas de tecnologia, sendo quatro
-        em Joinville e quatro nacionais/remotas, com o objetivo de identificar
-        cargos, tecnologias, competências e tendências do mercado.
-      </p>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Seção: Hero -->
+    <section id="inicio" class="hero-section py-5">
+      <div class="container py-5">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7">
+            <span class="badge rounded-pill bg-success-subtle text-success-emphasis border border-success-subtle mb-3 px-3 py-2">
+              Educação, prevenção e acolhimento
+            </span>
+            <h1 class="display-5 fw-bold text-dark mb-3">Conscientização para transformar o ambiente escolar em um lugar mais respeitoso.</h1>
+            <p class="lead text-secondary mb-4">
+              O projeto <strong>Conecta Respeito</strong> tem como objetivo informar a comunidade escolar sobre bullying escolar, social e digital, promovendo atitudes de acolhimento, prevenção e orientação segura.
+            </p>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="#o-que-e-bullying" class="btn btn-success btn-lg rounded-pill px-4">Saiba mais</a>
+              <a href="#canais-de-apoio" class="btn btn-outline-success btn-lg rounded-pill px-4">Buscar apoio</a>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="card border-0 shadow-lg rounded-4 overflow-hidden">
+              <div class="card-body p-4 bg-light">
+                <div class="d-flex align-items-center mb-3">
+                  <span class="badge rounded-pill bg-success text-white px-3 py-2">Foco principal</span>
+                </div>
+                <h2 class="h4 fw-bold text-dark mb-3">Ações que fazem a diferença</h2>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item bg-transparent px-0 py-2">
+                    <span class="fw-semibold text-success">•</span> Reconhecer situações de exclusão e agressão.
+                  </li>
+                  <li class="list-group-item bg-transparent px-0 py-2">
+                    <span class="fw-semibold text-success">•</span> Promover respeito e empatia no cotidiano.
+                  </li>
+                  <li class="list-group-item bg-transparent px-0 py-2">
+                    <span class="fw-semibold text-success">•</span> Orientar sobre canais de apoio e comunicação.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="mb-5">
-      <div class="d-flex align-items-center mb-3">
-        <h2 class="h4 mb-0">Vagas locais</h2>
-      </div>
-      <div class="row g-3">
-        <div class="col-md-6">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5>Desenvolvedor(a) Full Stack Sênior</h5>
-              <p class="text-muted mb-2">Multipedidos</p>
-              <p>
-                <strong>Tecnologias:</strong> PHP, JavaScript, Angular, React,
-                Laravel e AWS
-              </p>
-              <p class="mb-0">
-                CI/CD, Clean Code, TDD, Scrum/Kanban e bancos relacionais.
-              </p>
-            </div>
+    <!-- Seção: O que é bullying? -->
+    <section id="o-que-e-bullying" class="py-5 bg-light">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6">
+            <span class="badge rounded-pill bg-success-subtle text-success-emphasis border border-success-subtle mb-3 px-3 py-2">Entenda o tema</span>
+            <h2 class="fw-bold mb-3">O que é bullying?</h2>
+            <p class="text-secondary mb-3">
+              Bullying é um conjunto de atitudes agressivas, repetitivas e intencionais que causam medo, humilhação, isolamento ou sofrimento a outra pessoa. Ele pode acontecer em diferentes contextos, como escola, relações sociais e ambientes digitais.
+            </p>
+            <p class="text-secondary mb-0">
+              O problema não se resume a uma discussão isolada: ele envolve relações de poder, desigualdade e falta de empatia. Por isso, a prevenção exige ações de educação, cuidado e diálogo constante na comunidade escolar.
+            </p>
           </div>
-        </div>
 
-        <div class="col-md-6">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5>Java Spring Boot Junior Developer</h5>
-              <p class="text-muted mb-2">BairesDev</p>
-              <p>
-                <strong>Tecnologias:</strong> Java, Spring Boot e banco
-                relacional
-              </p>
-              <p class="mb-0">Git, APIs REST e inglês avançado.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5>Engenheiro de Software Backend</h5>
-              <p class="text-muted mb-2">RotaExata</p>
-              <p><strong>Tecnologias:</strong> Node.js e bancos relacionais</p>
-              <p class="mb-0">
-                Git, APIs RESTful e boas práticas de desenvolvimento.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5>Desenvolvedor(a) Backend Júnior</h5>
-              <p class="text-muted mb-2">Ultra LIMS</p>
-              <p><strong>Tecnologias:</strong> PHP, MySQL, PostgreSQL e Git</p>
-              <p class="mb-0">
-                Linux, segurança web, Docker e Redis (desejável).
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="mb-5">
-        <div class="d-flex align-items-center mb-3">
-            <h2 class="h4 mb-0">Vagas nacionais</h2>
-        </div>
+          <div class="col-lg-6">
             <div class="row g-3">
-
-                <div class="col-md-6">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5>Desenvolvedor Python JR</h5>
-                            <p class="text-muted mb-2">Solutis Tecnologias</p>
-                            <p><strong>Tecnologias:</strong> Python, AWS EC2, APIs REST</p>
-                            <p class="mb-0">Microsserviços, Linux, Docker e Kubernetes.</p>
-                        </div>
-                    </div>
+              <div class="col-md-6">
+                <div class="card h-100 border-0 shadow-sm rounded-4">
+                  <div class="card-body">
+                    <span class="badge rounded-pill bg-success-subtle text-success-emphasis mb-3">Repetição</span>
+                    <p class="mb-0 text-secondary">Agressões que se repetem ao longo do tempo, criando medo e desconforto.</p>
+                  </div>
                 </div>
-
-                <div class="col-md-6">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5>Desenvolvedor Java + Python</h5>
-                            <p class="text-muted mb-2">BRQ Digital Solutions</p>
-                            <p><strong>Tecnologias:</strong> Java, Python, Angular, Quarkus</p>
-                            <p class="mb-0">Docker, AWS, Grafana e IA.</p>
-                        </div>
-                    </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card h-100 border-0 shadow-sm rounded-4">
+                  <div class="card-body">
+                    <span class="badge rounded-pill bg-success-subtle text-success-emphasis mb-3">Intenção</span>
+                    <p class="mb-0 text-secondary">Há um propósito de intimidar, humilhar ou excluir alguém.</p>
+                  </div>
                 </div>
-
-                <div class="col-md-6">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5>Pessoa Desenvolvedora Júnior</h5>
-                            <p class="text-muted mb-2">Neogrid</p>
-                            <p><strong>Tecnologias:</strong> Golang, Java, Python e JavaScript</p>
-                            <p class="mb-0">Git, PostgreSQL, Oracle, SQL Server e CI/CD.</p>
-                        </div>
-                    </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card h-100 border-0 shadow-sm rounded-4">
+                  <div class="card-body">
+                    <span class="badge rounded-pill bg-success-subtle text-success-emphasis mb-3">Poder</span>
+                    <p class="mb-0 text-secondary">Situações em que a pessoa se sente sem proteção ou sem recursos para reagir.</p>
+                  </div>
                 </div>
-
-                <div class="col-md-6">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5>Especialista em Desenvolvimento BackEnd</h5>
-                            <p class="text-muted mb-2">Cielo</p>
-                            <p><strong>Tecnologias:</strong> Java, Spring Boot, Spring Security</p>
-                            <p class="mb-0">Docker, Kubernetes, AWS, microsserviços e SOLID.</p>
-                        </div>
-                    </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card h-100 border-0 shadow-sm rounded-4">
+                  <div class="card-body">
+                    <span class="badge rounded-pill bg-success-subtle text-success-emphasis mb-3">Impacto</span>
+                    <p class="mb-0 text-secondary">O sofrimento pode afetar autoestima, desempenho e bem-estar emocional.</p>
+                  </div>
                 </div>
-
+              </div>
             </div>
-        </section>
-
-        <section class="mb-5">
-            <div class="d-flex align-items-center mb-3">
-                <h2 class="h4 mb-0">Tecnologias mais citadas</h2>
-            </div>
-            <div class="d-flex flex-wrap gap-2">
-                <span class="badge bg-primary">1º Java</span>
-                <span class="badge bg-primary">2º JavaScript</span>
-                <span class="badge bg-primary">3º SQL</span>
-                <span class="badge bg-primary">4 ºGit</span>
-                <span class="badge bg-primary">5º Spring Boot</span>
-                <span class="badge bg-primary">6º Docker</span>
-                <span class="badge bg-primary">7º AWS</span>
-                <span class="badge bg-primary">8º Python</span>
-                <span class="badge bg-primary">9º PHP</span>
-                <span class="badge bg-primary">10º CI/CD</span>
-            </div>
-        </section>
-
-        <section class="mb-5">
-            <div class="row">
-                <div class="col-md-6">
-                    <h6>Competências técnicas</h6>
-                    <ul>
-                        <li>Git</li>
-                        <li>APIs REST</li>
-                        <li>Banco de dados SQL</li>
-                        <li>Docker</li>
-                        <li>CI/CD</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <h6>Competências comportamentais</h6>
-                    <ul>
-                        <li>Comunicação</li>
-                        <li>Trabalho em equipe</li>
-                        <li>Organização</li>
-                        <li>Proatividade</li>
-                        <li>Aprendizado contínuo</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section class="mb-5">
-            <div class="d-flex align-items-center mb-3"><i data-lucide="file-text" class="me-2"></i>
-                <h2 class="h4 mb-0">Análise final</h2>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <p class="mb-0">A pesquisa mostrou que Java, SQL, Git e APIs REST aparecem com frequência tanto nas
-                        vagas locais quanto nas nacionais. As vagas remotas apresentam maior presença de Docker, Cloud e
-                        microsserviços, enquanto as vagas de Joinville mantêm foco em sistemas corporativos e bancos de
-                        dados relacionais.</p>
-                </div>
-            </div>
-        </section>
-
-    <main class="container my-5"></main>
-    <footer class="bg-light text-success py-4 border-top">
-      <div class="container text-center">
-        <p class="mb-1"><strong>Data:</strong> Agosto de 2026</p>
-        <p class="mb-1"><strong>Disciplina:</strong> Fábrica de Software</p>
-        <p class="mb-0"><strong>Acadêmico:</strong> Kauê Dylon Pereira Bruch</p>
+          </div>
+        </div>
       </div>
-    </footer>
-  </body>
+    </section>
+
+    <!-- Seção: Tipos de bullying -->
+    <section id="tipos-de-bullying" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="badge rounded-pill bg-success-subtle text-success-emphasis border border-success-subtle px-3 py-2">Tipos de violência</span>
+          <h2 class="fw-bold mt-3 mb-2">Tipos de bullying</h2>
+          <p class="text-secondary mx-auto w-75">
+            O bullying pode aparecer de diferentes formas e em diversos ambientes. Conhecer essas manifestações ajuda na identificação precoce e no encaminhamento adequado.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm rounded-4">
+              <div class="card-body">
+                <span class="badge rounded-pill bg-success text-white mb-3">Físico</span>
+                <h3 class="h5 fw-bold">Agressão corporal</h3>
+                <p class="text-secondary mb-0">Empurrões, tapas, destruição de objetos, ameaças ou qualquer tipo de violência física intencional.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm rounded-4">
+              <div class="card-body">
+                <span class="badge rounded-pill bg-success text-white mb-3">Verbal</span>
+                <h3 class="h5 fw-bold">Ofensas e humilhações</h3>
+                <p class="text-secondary mb-0">Piadas ofensivas, xingamentos, apelidos depreciativos e comentários que diminuem a pessoa.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm rounded-4">
+              <div class="card-body">
+                <span class="badge rounded-pill bg-success-subtle text-success-emphasis border border-success-subtle mb-3">Psicológico</span>
+                <h3 class="h5 fw-bold">Humilhação e intimidação</h3>
+                <p class="text-secondary mb-0">Exclusão, ameaças, pressão emocional, manipulação e atitudes que geram medo ou ansiedade.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm rounded-4">
+              <div class="card-body">
+                <span class="badge rounded-pill bg-success-subtle text-success-emphasis border border-success-subtle mb-3">Social</span>
+                <h3 class="h5 fw-bold">Exclusão e isolamento</h3>
+                <p class="text-secondary mb-0">Rejeição em grupos, afastamento de atividades, isolamento e exclusão deliberada.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm rounded-4">
+              <div class="card-body">
+                <span class="badge rounded-pill bg-success-subtle text-success-emphasis border border-success-subtle mb-3">Digital</span>
+                <h3 class="h5 fw-bold">Cyberbullying</h3>
+                <p class="text-secondary mb-0">Ofensas pela internet, redes sociais, mensagens e compartilhamento de conteúdo humilhante.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm rounded-4">
+              <div class="card-body">
+                <span class="badge rounded-pill bg-success-subtle text-success-emphasis border border-success-subtle mb-3">Moral</span>
+                <h3 class="h5 fw-bold">Danos à reputação</h3>
+                <p class="text-secondary mb-0">Comentários que difamam, espalham mentiras ou provocam vergonha pública.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção: Sinais de alerta -->
+    <section id="sinais-de-alerta" class="py-5 bg-light">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-5">
+            <span class="badge rounded-pill bg-success-subtle text-success-emphasis border border-success-subtle mb-3 px-3 py-2">Atenção</span>
+            <h2 class="fw-bold mb-3">Sinais de alerta</h2>
+            <p class="text-secondary mb-4">
+              Nem sempre a pessoa que está sofrendo bullying expõe o problema abertamente. Observar mudanças no comportamento pode ser fundamental para identificar a situação precocemente.
+            </p>
+            <ul class="list-group list-group-flush rounded-4 shadow-sm border border-0">
+              <li class="list-group-item bg-white">Mudança brusca de humor ou isolamento.</li>
+              <li class="list-group-item bg-white">Evitar atividades escolares ou sociais.</li>
+              <li class="list-group-item bg-white">Baixa autoestima e dificuldades de concentração.</li>
+              <li class="list-group-item bg-white">Ficar nervoso(a) ao receber mensagens ou participar de grupos.</li>
+              <li class="list-group-item bg-white">Desistência frequente de eventos ou atividades em grupo.</li>
+            </ul>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="card border-0 shadow-lg rounded-4 overflow-hidden">
+              <div class="card-body p-4 p-lg-5">
+                <h3 class="h4 fw-bold mb-4">O que observar na rotina</h3>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="p-3 rounded-4 bg-success-subtle h-100">
+                      <h4 class="h6 fw-bold text-success">Na escola</h4>
+                      <p class="mb-0 text-secondary">Desempenho escolar abaixo do habitual, medo de ir para a aula ou conflitos frequentes.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="p-3 rounded-4 bg-warning-subtle h-100">
+                      <h4 class="h6 fw-bold text-success">No ambiente digital</h4>
+                      <p class="mb-0 text-secondary">Mensagens agressivas, comentários humilhantes, compartilhamento de imagens ou vídeos constrangedores.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="p-3 rounded-4 bg-info-subtle h-100">
+                      <h4 class="h6 fw-bold text-success">Na família</h4>
+                      <p class="mb-0 text-secondary">A pessoa pode se fechar, evitar conversas ou demonstrar preocupação e tristeza frequente.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="p-3 rounded-4 bg-primary-subtle h-100">
+                      <h4 class="h6 fw-bold text-success">No grupo de amigos</h4>
+                      <p class="mb-0 text-secondary">Situações de exclusão, rejeição ou presença de comentários que ilham vergonha diante de outros.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção: Como agir de forma segura? -->
+    <section id="como-agir" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="badge rounded-pill bg-success-subtle text-success-emphasis border border-success-subtle px-3 py-2">Orientação segura</span>
+          <h2 class="fw-bold mt-3 mb-2">Como agir de forma segura?</h2>
+          <p class="text-secondary mx-auto w-75">
+            A resposta adequada começa com escuta, acolhimento e orientação para que a situação seja tratada com sensibilidade e respeito.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6">
+            <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-3">
+              <div class="display-6 mb-3">1</div>
+              <h3 class="h5 fw-bold">Ouça sem julgar</h3>
+              <p class="text-secondary mb-0">Crie um ambiente em que a pessoa se sinta segura para falar sobre o que está acontecendo.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-3">
+              <div class="display-6 mb-3">2</div>
+              <h3 class="h5 fw-bold">Registre o que aconteceu</h3>
+              <p class="text-secondary mb-0">Anote datas, contextos e mensagens para entender a frequência e a gravidade da situação.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-3">
+              <div class="display-6 mb-3">3</div>
+              <h3 class="h5 fw-bold">Busque apoio</h3>
+              <p class="text-secondary mb-0">Compartilhe a situação com alguém de confiança, professor(a), responsável ou profissional da escola.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-3">
+              <div class="display-6 mb-3">4</div>
+              <h3 class="h5 fw-bold">Cuidado no ambiente digital</h3>
+              <p class="text-secondary mb-0">Evite respostas impulsivas e conserve provas de mensagens ou conteúdos ameaçadores.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção: Canais de apoio ou orientação -->
+    <section id="canais-de-apoio" class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="badge rounded-pill bg-success-subtle text-success-emphasis border border-success-subtle px-3 py-2">Apoio e orientação</span>
+          <h2 class="fw-bold mt-3 mb-2">Canais de apoio ou orientação</h2>
+          <p class="text-secondary mx-auto w-75">
+            O acolhimento pode acontecer em diferentes níveis. Quando necessário, a rede de suporte deve ser acionada de forma responsável e com atenção à segurança da pessoa afetada.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 border-0 shadow-sm rounded-4">
+              <div class="card-body">
+                <div class="bg-success-subtle rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 52px; height: 52px;">
+                  <span class="fw-bold text-success">01</span>
+                </div>
+                <h3 class="h5 fw-bold">Escola</h3>
+                <p class="text-secondary mb-0">Professor(a), orientador(a), coordenação e equipe pedagógica podem oferecer acolhimento inicial.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 border-0 shadow-sm rounded-4">
+              <div class="card-body">
+                <div class="bg-primary-subtle rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 52px; height: 52px;">
+                  <span class="fw-bold text-primary">02</span>
+                </div>
+                <h3 class="h5 fw-bold">Família</h3>
+                <p class="text-secondary mb-0">O diálogo em casa é essencial para escutar, acolher e orientar com cuidado.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 border-0 shadow-sm rounded-4">
+              <div class="card-body">
+                <div class="bg-warning-subtle rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 52px; height: 52px;">
+                  <span class="fw-bold text-warning">03</span>
+                </div>
+                <h3 class="h5 fw-bold">Profissionais</h3>
+                <p class="text-secondary mb-0">Psicólogo(a), assistente social e orientadores(as) podem agir no suporte emocional e pedagógico.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 border-0 shadow-sm rounded-4">
+              <div class="card-body">
+                <div class="bg-info-subtle rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 52px; height: 52px;">
+                  <span class="fw-bold text-info">04</span>
+                </div>
+                <h3 class="h5 fw-bold">Comunidade</h3>
+                <p class="text-secondary mb-0">Ações de sensibilização e presença ativa ajudam a construir um espaço mais respeitoso.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção: Compromisso da comunidade -->
+    <section id="compromisso" class="py-5">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-6">
+            <span class="badge rounded-pill bg-success-subtle text-success-emphasis border border-success-subtle mb-3 px-3 py-2">Responsabilidade coletiva</span>
+            <h2 class="fw-bold mb-3">Compromisso da comunidade</h2>
+            <p class="text-secondary mb-3">
+              Prevenir o bullying não é tarefa de uma pessoa isolada. É um compromisso compartilhado por estudantes, famílias, professores, coordenadores e toda a comunidade escolar.
+            </p>
+            <p class="text-secondary mb-4">
+              Quando a escola promove diálogo, empatia e regras claras de convivência, ela fortalece o ambiente de aprendizagem e o bem-estar coletivo.
+            </p>
+            <a href="#inicio" class="btn btn-success rounded-pill px-4">Voltar ao início</a>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="card h-100 border-0 shadow-sm rounded-4 bg-success-subtle p-3">
+                  <h3 class="h5 fw-bold text-success">Estudantes</h3>
+                  <p class="mb-0 text-secondary">Praticar respeito, acolhimento e apoio entre pares.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card h-100 border-0 shadow-sm rounded-4 bg-success-subtle p-3">
+                  <h3 class="h5 fw-bold text-success">Famílias</h3>
+                  <p class="mb-0 text-secondary">Conversar, escutar e orientar com empatia e atenção.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card h-100 border-0 shadow-sm rounded-4 bg-success-subtle p-3">
+                  <h3 class="h5 fw-bold text-success">Educadores</h3>
+                  <p class="mb-0 text-secondary">Identificar sinais, orientar e reforçar boas práticas de convivência.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card h-100 border-0 shadow-sm rounded-4 bg-success-subtle p-3">
+                  <h3 class="h5 fw-bold text-success">Escola</h3>
+                  <p class="mb-0 text-secondary">Promover políticas de prevenção, acolhimento e educação emocional.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row align-items-center g-3">
+        <div class="col-md-8">
+          <p class="mb-0 fw-semibold">Conecta Respeito</p>
+          <small class="text-white-50">Disciplina: Fábrica de Software | Acadêmico: Kauê Dylon | Ano: 2026</small>
+        </div>
+        <div class="col-md-4 text-md-end">
+          <small class="text-white-50">Informativo e educativo</small>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
